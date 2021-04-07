@@ -1,0 +1,153 @@
+<html><head><title>CSS Template for Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head><body style="">
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header 
+    <span class="w3-tag">Open whenever we stream</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <p>The TwoKings Menu was founded in the Royal Kingdom of BosLaoia. Please use your royal coins to purchase off the menu below.</p>
+    <p></p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Death is subjective.</i></p>
+      <p>Chef, Coffeeist and Owner: LL Cool J</p>
+    </div>
+    <img src="https://cdn.discordapp.com/attachments/717637495071703130/788849442018820106/unknown.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> Whenever we are streaming</p>
+    <p><strong>Address:</strong> twitch.tv/twokingsgames</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink w3-dark-grey">Nothing to Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drankz</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card" style="display: block;">
+      <h5>We don't have any food.. click the drankz tab</h5>
+      
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card" style="display: none;">
+      <h5>To order, type !TKM and the item Number after. (For example. You want me to make an old fashioned you'd say in the chat '!TKM 2')</h5>
+      <p </div><p><br>
+      <h5>
+      </h5>Margarita</h5>
+      <p class="w3-text-grey">Classic from scratch Marg 2.5M</p><br>
+    
+      <h5>Old Fashioned</h5>
+      <p class="w3-text-grey">We have the bitters and the booze 4.5M</p><br>
+    
+      <h5>Mohito</h5>
+      <p class="w3-text-grey">Hopefully we have mint 3.0M</p><br>
+    
+      <h5>Lemon Drop Shot</h5>
+      <p class="w3-text-grey">College memories with this one 3.0M</p><br>
+    
+      <h5>Just grab a beer</h5>
+      <p class="w3-text-grey">Classic option when looking for a buzz 1.5M</p>
+    </div>  
+    <img src="https://cdn.discordapp.com/attachments/545350743205609472/608555007171887105/unknown.png" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="https://cdn.discordapp.com/attachments/545350743205609472/705262796258017331/twerk.gif" class="w3-image" style="width:100%">
+    <p>
+      <span class="w3-tag">FYI!</span>
+    "We offer scuffed full-service drinks that you use your hard earned coins for to not even be able to drink it. Though, we'll drink it for you and we'll reap the negative outcomes. No worries.. thank us later. Love you"
+    </p>
+      <p></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+
+</body></html>
